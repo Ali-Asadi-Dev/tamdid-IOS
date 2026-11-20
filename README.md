@@ -2,8 +2,8 @@
 
 **A free, open-source subscription tracker for iPhone, built with SwiftUI.** See what you pay for, what it costs per month and what renews next, with a reminder before every renewal and every free trial that's about to turn into a payment.
 
-[![iOS](https://github.com/Ali-Asadi-Dev/tamdid/actions/workflows/ios.yml/badge.svg)](https://github.com/Ali-Asadi-Dev/tamdid/actions/workflows/ios.yml)
-[![Core and translations](https://github.com/Ali-Asadi-Dev/tamdid/actions/workflows/shared.yml/badge.svg)](https://github.com/Ali-Asadi-Dev/tamdid/actions/workflows/shared.yml)
+[![iOS](https://github.com/Ali-Asadi-Dev/tamdid-IOS/actions/workflows/ios.yml/badge.svg)](https://github.com/Ali-Asadi-Dev/tamdid-IOS/actions/workflows/ios.yml)
+[![Core and translations](https://github.com/Ali-Asadi-Dev/tamdid-IOS/actions/workflows/shared.yml/badge.svg)](https://github.com/Ali-Asadi-Dev/tamdid-IOS/actions/workflows/shared.yml)
 
 No account, no ads, no tracking: data stays on the device. English, Persian, Arabic, Turkish and German, with right-to-left layouts, native digits, the Solar Hijri (Jalali) calendar and the Iranian toman.
 

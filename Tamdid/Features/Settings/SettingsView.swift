@@ -77,7 +77,7 @@ struct SettingsView: View {
 
             Section("About") {
                 LabeledContent("Tamdid", value: format.digits(String(localized: "Version \(Bundle.main.shortVersion)")))
-                Link(destination: URL(string: "https://github.com/Ali-Asadi-Dev/tamdid")!) {
+                Link(destination: URL(string: "https://github.com/Ali-Asadi-Dev/tamdid-IOS")!) {
                     Label("Free and open source", systemImage: "chevron.left.forwardslash.chevron.right")
                 }
                 Text("No account, no ads, no tracking. Your data never leaves this phone unless you export it.")

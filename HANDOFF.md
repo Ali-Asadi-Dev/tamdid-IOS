@@ -6,8 +6,8 @@
 
 Tamdid (تمدید, "renewal") is a free, open-source subscription tracker built as a portfolio project for **Ali Asadi** (Senior iOS Engineer, GitHub `Ali-Asadi-Dev`) and as a free app for the Iranian Android store **Cafe Bazaar**. Two native apps share rules through test fixtures, not code. Five languages: en, fa, ar, tr, de.
 
-**Repositories (split on 2026-11-20):**
-- `Ali-Asadi-Dev/tamdid` — this repo, **iOS only** (SwiftUI app at the root, `Packages/TamdidKit`). The portfolio piece.
+**Repositories (split on 2026-11-20; the original `tamdid` monorepo is superseded):**
+- `Ali-Asadi-Dev/tamdid-IOS` — this repo, **iOS only** (SwiftUI app at the root, `Packages/TamdidKit`). The portfolio piece.
 - `Ali-Asadi-Dev/tamdid-android` — Android (Compose), history preserved from the monorepo.
 - `shared/test-vectors/business-rules.json`, `shared/catalog.json` (Android: `shared/catalog/catalog.json`) and `shared/i18n/translations.json` exist in **both** repos and must stay identical. Change a rule in both, run both test suites.
 
@@ -26,7 +26,7 @@ Owner's goals, in their words: a "free version of paid apps", professional enoug
 
 ## First things to do on the Mac
 
-1. `git clone https://github.com/Ali-Asadi-Dev/tamdid && cd tamdid` (and `tamdid-android` for Android)
+1. `git clone https://github.com/Ali-Asadi-Dev/tamdid-IOS && cd tamdid-IOS` (and `tamdid-android` for Android)
 2. Check the latest **iOS** workflow run on GitHub (it should be green). Screenshots from the UI tests are on the `ci-screenshots` branch.
 3. `brew install xcodegen && xcodegen generate && open Tamdid.xcodeproj`, then run on a simulator. Set your Team under Signing to run on a device.
 4. Android: open the `tamdid-android` repo in Android Studio, or `./gradlew :app:installDebug`.
@@ -72,7 +72,7 @@ tools/i18n.py                               Generates Localizable.xcstrings (the
 - Swift 6.3.1 toolchain installed from download.swift.org to `/opt/tools/swift`; Android SDK 36 to `/opt/android-sdk`. The cloud environment "Tamdid (iOS + Android builds)" allows `dl.google.com` and `download.swift.org`.
 - Maven Central redirected large files to a blocked host; `~/.gradle/init.d/maven-mirror.gradle` (container-local, not in the repo) put Google's Maven Central mirror first and pointed Robolectric at it. Not needed on a normal machine.
 - Building XcodeGen on Linux was not permitted, so the `.xcodeproj` is generated in CI / on the Mac.
-- The session could not create GitHub repos or change repo settings; the owner created `Ali-Asadi-Dev/tamdid`.
+- The session could not create GitHub repos or change repo settings; the owner created the repositories. The original monorepo `Ali-Asadi-Dev/tamdid` was split into `tamdid-IOS` and `tamdid-android` (history kept in both) and can be archived or deleted.
 
 ## QA review log (first session)
 
